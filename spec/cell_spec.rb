@@ -1,6 +1,8 @@
 require './lib/cell'
 
 describe Cell do
+  context 'Initialization' do
+
   it 'is initialed with an empty value' do
   cell = Cell.new
   expect(cell.value).to eq ''
@@ -15,6 +17,7 @@ describe Cell do
   cell = Cell.new('O')
   expect(cell.value).to eq 'O'
   end
+end
 
 
 end
